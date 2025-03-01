@@ -1,12 +1,13 @@
 // Complete the js code
 class Car {
 	constructor(make,model){
-		this.maker = make;
-		this.modil = model;
+		this.make = make;
+		this.model = model;
 	}
 	getMakeModel(){
 		return `${this.maker} ${this.modil}`
 	}
+	
 }
 
 class SportsCar extends Car{
