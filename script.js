@@ -11,14 +11,17 @@ class Car {
 
 class SportsCar extends Car{
 	constructor(make, model, topSpeed){
-		this.maker = make;
-		this.modil = model;
+		super(make,model)
 		this.topSpeed = topSpeed;
 	}
 	getTopSpeed(){
-		return topSpeed;
+		return this.topSpeed;
 	}
 }
+
+const car = new SportsCar("Ferrari", "Testarossa", 200);
+console.log(car.getMakeModel()); // Output: Ferrari Testarossa
+console.log(car.getTopSpeed()); 
 
 // Do not change the code below
 window.Car = Car;
